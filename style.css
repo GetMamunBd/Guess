@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 99vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .content {
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container header {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+.container header p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.container .btn {
+  width: 100%;
+  max-width: 180px;
+  border: 0;
+  outline: 0;
+  background: linear-gradient(#f75973, #dc2342);
+  color: #fff;
+  padding: 15px;
+  border-radius: 100vh;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.container .btn:hover {
+  background: linear-gradient(#e2455f, #aa112a);
+}
+.container .game_body {
+  text-align: center;
+  padding: 30px 0;
+}
+.container .game_body h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.container .game_body .hidden_group {
+  width: 100%;
+  position: relative;
+}
+.container .game_body .hidden_group .hidden_number {
+  margin: 0 auto;
+  width: 120px;
+  height: 100px;
+  background: linear-gradient(#f75973, #dc2342);
+  border-radius: 12px;
+  font-size: 62px;
+  line-height: 100px;
+  font-weight: 700;
+}
+.container .game_body .hidden_group .line {
+  height: 12px;
+  width: 100vw;
+  background-color: #dc2342;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.container .game_body .input_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .game_body .input_box input {
+  width: 100%;
+  max-width: 220px;
+  height: 80px;
+  font-size: 52px;
+  font-weight: 700;
+  background: #2e1b1b;
+  border-radius: 16px;
+  color: #fff;
+  border: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.container .game_body .input_box input:focus {
+  outline: none;
+}
+.container .game_body .input_box .message {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.container .game_body .input_box .btn {
+  max-width: 220px;
+}
+.container .game_bottom {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .game_bottom .score_box,
+.container .game_bottom .highscore_box {
+  font-size: 20px;
+  font-weight: 600;
+}
+.container .game_bottom .score_box i,
+.container .game_bottom .highscore_box i {
+  color: #ff5b76;
+  margin-right: 10px;
+}
+.container .game_bottom .score_box {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 530px) {
+  .container header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .container .game_body {
+    padding: 0;
+  }
+  .container .game_body h1 {
+    font-size: 24px;
+  }
+  .container .game_body .hidden_group .hidden_number {
+    width: 100px;
+    height: 80px;
+    font-size: 48px;
+    line-height: 80px;
+  }
+  .container .game_body .input_box .message {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .container .game_body .input_box input {
+    max-width: 180px;
+    height: 65px;
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  .container .game_bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

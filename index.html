@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number | | Game</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/316/316337.png">
+    <script src="https://kit.fontawesome.com/ada7c4236c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <header>
+                <button class="btn again">Play Again <i class="fa-solid fa-arrow-rotate-right"></i></button>
+                <p>গেমটি ১ থেকে ১০ এর মধ্যে একটি নাম্বার নির্বাচন করেছে । আপনাকে সে নাম্বারটি গেস করতে হবে
+                </p>
+            </header>
+
+            <div class="game_body">
+                <h1>Guess The Number!</h1>
+                <div class="hidden_group">
+                    <div class="line"></div>
+                    <p class="hidden_number">?</p>
+                </div>
+
+                <div class="input_box">
+                    <p class="message"><i class="fa-solid fa-brain"></i> Start Guessing Now...</p>
+                    <input type="number" class="input_number" placeholder="00">
+                    <button class="btn check">Check!</button>
+                </div>
+            </div>
+            <div class="game_bottom">
+                <p class="score_box"><i class="fa-solid fa-dice-five"></i> Your Score : <span class="score">10</span>
+                </p>
+                <p class="highscore_box"><i class="fa-solid fa-chess-queen"></i> Your Highcore : <span
+                        class="highscore">0</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
